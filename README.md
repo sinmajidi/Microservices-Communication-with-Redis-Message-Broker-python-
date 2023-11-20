@@ -20,7 +20,8 @@ This example demonstrates a simple microservices architecture using Flask, where
     
     http://localhost:5001/send_message
 
-###`app2.py`
+### `app2.py`
+
 app2.py represents the second microservice, which listens for messages on the 'message_channel' and updates the received message.
 
 Usage:
@@ -36,7 +37,7 @@ Access the following endpoint to check the received message:
     
     http://localhost:5002/receive_message
     
-###`config.py`
+### `config.py`
 config.py stores the Redis connection details.
 
     # config.py
@@ -45,7 +46,7 @@ config.py stores the Redis connection details.
     REDIS_PASSWORD = "PASSWORD"
     
     
-###How it Works
+### How it Works
 1-app1.py sends a message to the 'message_channel' in the Redis message broker.
 
 2-app2.py listens for messages on the 'message_channel', processes them, and updates the received message.
