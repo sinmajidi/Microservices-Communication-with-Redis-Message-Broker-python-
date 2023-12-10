@@ -61,9 +61,9 @@ class MessageBroker:
 
 if __name__ == '__main__':
     # Redis server details
-    redis_host = '87.107.104.18'
+    redis_host = '0.0.0.0'
     redis_port = 6379
-    redis_password = 'Sm39149'
+    redis_password = '***'
 
     # Create a MessageBroker instance
     broker = MessageBroker(redis_host, redis_port, redis_password)

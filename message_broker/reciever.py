@@ -27,9 +27,9 @@ class MessageReceiver:
                 print(f"Received message on channel {channel}: {data}")
 
 if __name__ == '__main__':
-    redis_host = '87.107.104.18'
+    redis_host = '0.0.0.0'
     redis_port = 6379
-    redis_password = 'Sm39149'
+    redis_password = '***'
 
     receiver = MessageReceiver(redis_host, redis_port, redis_password)
 
